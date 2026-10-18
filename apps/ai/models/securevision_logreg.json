@@ -1,0 +1,11 @@
+{
+  "model_type": "logistic_regression",
+  "feature_extractor": "x3d_xs_kinetics400",
+  "feature_dim": 2048,
+  "threshold": 0.5,
+  "regularization_c": 0.1,
+  "class_weight": "balanced",
+  "sample_weight_strategy": "inverse_clip_count_per_content_id",
+  "train_clips": 77,
+  "train_unique_videos": 32
+}

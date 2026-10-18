@@ -2,13 +2,14 @@
   "name": "SecureVision",
   "private": true,
   "scripts": {
+    "dev": "dotenv -e .env -- turbo run dev --env-mode=loose",
     "build": "turbo run build",
-    "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types"
   },
   "devDependencies": {
+    "dotenv-cli": "^11.0.0",
     "prettier": "3.9.6",
     "turbo": "^2.11.9",
     "typescript": "7.0.2"

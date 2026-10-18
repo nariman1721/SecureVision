@@ -1,0 +1,22 @@
+{
+  "name": "SecureVision Candidate Acceptance Rule",
+  "status": "training_calibrated_not_yet_development_validated",
+  "development_validation_used": false,
+  "target_event_recall": 0.9,
+  "event_match_radius_sec": 10.0,
+  "rule": {
+    "rule_type": "single_threshold",
+    "metric": "peak_probability",
+    "threshold": 0.4508326361668286
+  },
+  "training_metrics": {
+    "event_recall": 1.0,
+    "normal_specificity": 0.26666666666666666,
+    "false_positive_rate": 0.7333333333333333,
+    "balanced_score": 0.6333333333333333,
+    "event_hits": 18,
+    "events": 18,
+    "false_positive_videos": 11,
+    "normal_videos": 15
+  }
+}

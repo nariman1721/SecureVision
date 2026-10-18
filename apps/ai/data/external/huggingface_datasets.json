@@ -1,0 +1,104 @@
+{
+  "snapshot_date": "2026-10-17",
+  "policy": {
+    "allowed_licenses": [
+      "apache-2.0",
+      "mit",
+      "cc-by-4.0",
+      "cc0-1.0"
+    ],
+    "notes": "A permissive repository tag is not sufficient when the dataset card or source dataset adds non-commercial terms. Code, weights, annotations and source media must be cleared separately."
+  },
+  "datasets": [
+    {
+      "id": "7xiang/VAU-Bench",
+      "url": "https://huggingface.co/datasets/7xiang/VAU-Bench",
+      "license": "mit",
+      "access": "public",
+      "commercial_status": "approved_metadata_only",
+      "modality": "CSV metadata and video-QA annotations",
+      "relevance": "Temporal intervals, anomaly classes, key evidence and explanations; includes stealing and shoplifting examples.",
+      "recommended_use": "Violation taxonomy, explanation schema and temporal-localization evaluation. The Hugging Face repository does not provide a clean bank-cashier training corpus."
+    },
+    {
+      "id": "RichMiguel/Banknotes-Coins",
+      "url": "https://huggingface.co/datasets/RichMiguel/Banknotes-Coins",
+      "license": "mit",
+      "access": "public",
+      "commercial_status": "approved_auxiliary_only",
+      "modality": "1,100 labeled 256x256 banknote images",
+      "relevance": "Generic banknote appearance pretraining; no KZT labels and no object-detection boxes.",
+      "recommended_use": "Optional auxiliary experiment only. Do not mix its denominations with the final KZT class ontology."
+    },
+    {
+      "id": "standard-cognition/RetailAction",
+      "url": "https://huggingface.co/datasets/standard-cognition/RetailAction",
+      "license": "other",
+      "access": "public",
+      "commercial_status": "restricted_requires_permission",
+      "modality": "42,000 synchronized top-view retail video clips",
+      "relevance": "Closest camera geometry and hand-object actions: take, put and touch.",
+      "recommended_use": "Research reference only unless Standard AI grants commercial permission. The custom license adds a revenue-triggered permission requirement."
+    },
+    {
+      "id": "CosmicAstro/UCF-Crime-X3D",
+      "url": "https://huggingface.co/datasets/CosmicAstro/UCF-Crime-X3D",
+      "license": "other",
+      "access": "public",
+      "commercial_status": "blocked_unclear_source_rights",
+      "modality": "1,900 pre-extracted X3D feature files, 2.34 GB",
+      "relevance": "Normal CCTV, stealing and shoplifting anomaly features.",
+      "recommended_use": "Do not train the deliverable on this mirror until both the mirror and original UCF-Crime media rights are cleared."
+    },
+    {
+      "id": "xiaozhang79/CCTV-Anomaly",
+      "url": "https://huggingface.co/datasets/xiaozhang79/CCTV-Anomaly",
+      "license": "cc-by-nc-4.0",
+      "access": "gated",
+      "commercial_status": "blocked_noncommercial",
+      "modality": "14,133 CCTV videos, 234 hours, event captions",
+      "relevance": "Large surveillance-video understanding corpus.",
+      "recommended_use": "Do not use in the ForteBank deliverable. The card terms explicitly limit annotations to research and non-commercial use even though the repository metadata currently displays an Apache tag."
+    },
+    {
+      "id": "ertiaM/Anomaly_Detection_in_Surveillance_Videos",
+      "url": "https://huggingface.co/datasets/ertiaM/Anomaly_Detection_in_Surveillance_Videos",
+      "license": "unlicensed",
+      "access": "public",
+      "commercial_status": "blocked_noncommercial",
+      "modality": "950 mirrored UCF-Crime video clips",
+      "relevance": "Includes stealing and other CCTV anomalies.",
+      "recommended_use": "Do not use. The card states personal research and educational use only and the mirror has no reusable license."
+    },
+    {
+      "id": "detector1/shopliftingDataSet",
+      "url": "https://huggingface.co/datasets/detector1/shopliftingDataSet",
+      "license": "unlicensed",
+      "access": "public",
+      "commercial_status": "blocked_no_license",
+      "modality": "Shoplifting media",
+      "relevance": "Potentially related behavior, but provenance and labels are undocumented.",
+      "recommended_use": "Do not download or train on it."
+    },
+    {
+      "id": "menezes-luis/tcc-shoplifting",
+      "url": "https://huggingface.co/datasets/menezes-luis/tcc-shoplifting",
+      "license": "unlicensed",
+      "access": "public",
+      "commercial_status": "blocked_no_license",
+      "modality": "Shoplifting videos",
+      "relevance": "Related retail anomaly domain.",
+      "recommended_use": "Do not download or train on it without provenance and an explicit license."
+    },
+    {
+      "id": "34data/shoplifting-videos",
+      "url": "https://huggingface.co/datasets/34data/shoplifting-videos",
+      "license": "unlicensed",
+      "access": "public",
+      "commercial_status": "blocked_no_license",
+      "modality": "Shoplifting videos",
+      "relevance": "Related retail anomaly domain.",
+      "recommended_use": "Do not download or train on it without provenance and an explicit license."
+    }
+  ]
+}

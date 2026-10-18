@@ -1,0 +1,13 @@
+{
+  "name": "securevision-ai",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": ".venv/bin/python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000 --reload",
+    "build": ".venv/bin/python -m compileall -q app",
+    "check": ".venv/bin/python -m pip check",
+    "test:model": ".venv/bin/python -c \"from app.model.loader import load_model; load_model(); print('X3D OK')\"",
+    "test:motion": ".venv/bin/python -m training.test_motion_features",
+    "audit:datasets": ".venv/bin/python -m training.audit_external_datasets"
+  }
+}

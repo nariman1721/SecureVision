@@ -1,0 +1,8 @@
+{
+  "model": "x3d_xs",
+  "pretraining_dataset": "Kinetics-400",
+  "source": "https://dl.fbaipublicfiles.com/pytorchvideo/model_zoo/kinetics/X3D_XS.pyth",
+  "weights_file": "x3d_xs_kinetics400.pyth",
+  "sha256": "6dafc96144c88f800b190d2cb179ff69b8fd48c40afd4deca6c1e61f76fdfe86",
+  "state_dict_parameters": 563
+}

@@ -1,0 +1,27 @@
+{
+  "model_name": "SecureVision Temporal Candidate Reranker",
+  "model_type": "StandardScaler + LogisticRegression",
+  "validation_strategy": "leave-one-video-out",
+  "development_validation_used": false,
+  "x3d_recomputed": false,
+  "feature_columns": [
+    "region_score",
+    "max_candidate_score",
+    "mean_candidate_score",
+    "peak_prominence",
+    "mean_prominence",
+    "excess_area",
+    "normalized_area",
+    "consistency",
+    "persistence_mean",
+    "probability_std",
+    "edge_drop",
+    "windows_in_region",
+    "duration_sec"
+  ],
+  "positive_radius_sec": 5.0,
+  "training_candidates": 23,
+  "training_positive_candidates": 14,
+  "training_negative_candidates": 9,
+  "training_videos": 17
+}

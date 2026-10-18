@@ -26,8 +26,8 @@ coverage
 out/
 build
 dist
-
-
+.env
+runtime/
 # Debug
 npm-debug.log*
 yarn-debug.log*
@@ -36,3 +36,40 @@ yarn-error.log*
 # Misc
 .DS_Store
 *.pem
+
+# SecureVision private data and local runtime
+apps/ai/data/raw/
+apps/ai/data/labels/
+apps/ai/data/processed/
+apps/ai/runtime/
+apps/ai/.venv/
+apps/ai/reports/
+apps/ai/result.json
+
+# Secrets
+.env
+.env.*
+**/.env
+**/.env.*
+
+# Local editor and backups
+*.bak
+.DS_Store
+
+# Generated release reports
+/release_checks/
+
+# Python and local artifacts
+*.pyc
+__pycache__/
+.pytest_cache/
+*.log
+
+# Local backups
+*.bak
+
+# Local AI diagnostics
+/apps/ai/ai_snapshot.txt
+
+# Generated release tests
+/release_checks/
