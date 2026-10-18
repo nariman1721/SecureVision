@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: securevision-ai
+    runtime: docker
+    plan: free
+    dockerContext: .
+    dockerfilePath: ./apps/ai/Dockerfile
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      - key: OMP_NUM_THREADS
+        value: "1"
+      - key: MKL_NUM_THREADS
+        value: "1"
+
+  - type: web
+    name: securevision-api
+    runtime: docker
+    plan: free
+    dockerContext: .
+    dockerfilePath: ./apps/api/Dockerfile
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: CORS_ORIGIN
+        value: https://secure-vision-orcin.vercel.app
+      - key: AI_SERVICE_URL
+        sync: false

@@ -17,6 +17,7 @@ async function bootstrap() {
     origin: [
       'http://localhost:3000',
       'http://127.0.0.1:3000',
+      ...(process.env.CORS_ORIGIN ?? '').split(',').filter(Boolean),
     ],
 
     methods: [
@@ -37,12 +38,12 @@ async function bootstrap() {
 
   const port =
     Number(
-      process.env.API_PORT,
+      process.env.PORT ?? process.env.API_PORT,
     ) || 4000;
 
   await app.listen(
     port,
-    '127.0.0.1',
+    '0.0.0.0',
   );
 
   console.log(
